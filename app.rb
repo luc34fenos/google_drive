@@ -1,5 +1,6 @@
 require 'bundler'
 Bundler.require
+
 require "google_drive"
 require 'json'
 require 'nokogiri'
@@ -21,10 +22,10 @@ require 'CSV_files/make_csv'
 #end
 
 files = Hash.new(0)
-text = File.read("db/email.JSON")
+File.read('db/email.JSON')
 files = JSON.parse(text)
 
-ssheet("db/email.JSON")
+ssheet(files)
 make_csv(files)
 
 p "mission accomplie!!!"
