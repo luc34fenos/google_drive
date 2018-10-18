@@ -4,10 +4,8 @@
 #require 'open-uri'
 #require 'resetclient'
 
-lien = 'http://annuaire-des-mairies.com/val-d-oise.html'
-
-# Fetch and parse HTML document
-doc = Nokogiri::HTML(open(lien))
+#lien = 'http://annuaire-des-mairies.com/val-d-oise.html'
+#doc = Nokogiri::HTML(open(lien))
 
 def get_the_email_of_a_townhal_from_its_webpage(page , lien, n_ville)
 	v_lien = ""
